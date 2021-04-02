@@ -1,1 +1,1 @@
-# rock-paper-scissor
+A Simple rock-paper-scissor game played with a computer.
