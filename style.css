@@ -1,144 +1,171 @@
-*{
-	color: #1D3557
+* {
+    color: #1D3557
 }
 
-body{
-	background-color: #f1faee;
-	height: 90vh;
-	font-family: Ubuntu,cursive;
+body {
+    background-color: #f1faee;
+    height: 90vh;
+    font-family: Ubuntu, cursive;
 }
 
-.head{
-	display: flex;
+.head {
+    display: flex;
     flex-direction: column;
-	align-items: center;
-    
-} 
-
-.container{
-	display: flex;
-	justify-content: space-around;
-	margin-top: 50px;
+    align-items: center;
 }
 
-.score{
-	border: 3px solid #E63946;
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.score {
+    border: 3px solid #E63946;
     height: 150px;
     width: 150px;
-	text-align: center;
-	border-radius: 12px;
+    text-align: center;
+    border-radius: 12px;
 }
-.scores{
-	position: relative;
+
+.scores {
+    position: relative;
     top: 10%;
     font-size: 80px;
-	text-align: center;
+    text-align: center;
     font-family: monospace;
 }
 
 .score0 {
-	position: relative;
-	top: 5px;
-	font-size: 17px;
-	font-family: cursive;
+    position: relative;
+    top: 5px;
+    font-size: 17px;
+    font-family: cursive;
 }
 
-
-.btns{
-	display: flex;
-	align-items: center;	
+.btns {
+    display: flex;
+    align-items: center;
 }
-
 
 .btn {
-	
-	margin: 25px;
-	height: 100px;
+    margin: 25px;
+    height: 100px;
     width: 100px;
-	border-radius: 6px;
-	border-color: #222831;
-	cursor: pointer;
-	background-color: rgb(255 250 250 / 62%);
-	
+    border-radius: 6px;
+    border-color: #222831;
+    cursor: pointer;
+    background-color: rgb(255 250 250 / 62%);
 }
 
 button.btn:active {
-	background-color: rgb(192 192 192 / 35%);
+    background-color: rgb(192 192 192 / 35%);
 }
 
 button.btn:hover {
-	transform: scale(1.2);
-	transition-duration: 0.1s;
+    transform: scale(1.2);
+    transition-duration: 0.1s;
 }
 
-.btns span{
-   color: #457B9D;
-   font-weight: 800;
-   font-family: cursive;
-   font-size: 16px;
+.btns span {
+    color: #457B9D;
+    font-weight: 800;
+    font-family: cursive;
+    font-size: 16px;
 }
 
 #rock-btn img {
-	position: relative;
+    position: relative;
     height: 47%;
     top: 4px;
-		
 }
-
 
 #paper-btn img {
-
-	height: 60%;
-	
+    height: 60%;
 }
-
 
 #scissor-btn img {
-
-	height: 40%;
-	
+    height: 40%;
 }
 
-
-#rock-btn span{
-	position: relative;
+#rock-btn span {
+    position: relative;
     top: 12px;
 }
 
-#paper-btn span{
-	position: relative;
-	top: 5px;
+#paper-btn span {
+    position: relative;
+    top: 5px;
 }
 
-#scissor-btn span{
-	position: relative;
-	top: 14px;
+#scissor-btn span {
+    position: relative;
+    top: 14px;
 }
 
-#reload-div{
-	position: relative;
+#reload-div {
+    position: relative;
     display: flex;
     justify-content: center;
     top: 50px;
 }
 
 #refresh {
-	height: 40px;
+    height: 40px;
     width: 100px;
     border-radius: 6px;
     border-color: #222831;
     cursor: pointer;
-	font-family: Ubuntu,cursive;
-	font-size: 25px;
+    font-family: Ubuntu, cursive;
+    font-size: 25px;
     font-weight: 600;
     background-color: rgb(255 250 250 / 62%);
-	color: #E63946;
+    color: #E63946;
 }
 
 #refresh:hover {
-	transform: scale(1.2);
-	transition-duration: 0.1s;
+    transform: scale(1.2);
+    transition-duration: 0.1s;
 }
-#refresh:active{
-	background-color: rgb(192 192 192 / 35%);
+
+#refresh:active {
+    background-color: rgb(192 192 192 / 35%);
+}
+
+@media (max-width: 660px) {
+    * {
+        font-size: 11px;
+    }
+    .btn {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+    .score {
+        width: 75px;
+        height: 75px;
+    }
+    #refresh {
+        height: auto;
+        width: auto;
+        font-size: 15px;
+    }
+    .score0 {
+        font-size: 8.9px;
+    }
+    .scores {
+        font-size: 40px;
+    }
+    .btns span {
+        font-size: 8px;
+    }
+    #rock-btn span {
+        top: 3px;
+    }
+    #paper-btn span {
+        top: auto;
+    }
+    #scissor-btn span {
+        top: 5px;
+    }
 }
