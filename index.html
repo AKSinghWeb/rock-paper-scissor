@@ -1,51 +1,46 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-	<title>rock-paper-scissor </title>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Rock-Paper-Scissor </title>
 	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-</head>
-
-<body>
-	<div class="head">
-		<h1>Welcome to the game of Rock Paper Scissors</h1>
-		<h3 id="selection">This is a  game of rock-paper-scissor you play with the computer</h2>
-		<h2 id="winner">The game ends when either you or computer scores <kbd>5</kbd> points</h3>
-	</div>
-	<div class="container">
-
-		<div class="score" id="player">
-			<span class="score0">Your Score</span> <br>
-			<span class="scores" id="player-score">0</span>
-		</div>
-
-		<div class="btns">
-			<button class="btn" id="rock-btn">
-				<img src="./icons/rock.svg">
-				<span>ROCK</span>
-			</button>
-			<button class="btn" id="paper-btn">
-				<img src="./icons/paper.svg">
-				<span>PAPER</span>
-			</button>
-			<button class="btn" id="scissor-btn">
-				<img src="./icons/scissor.png">
-				<span>SCISSOR</span>
-			</button>
-		</div>
-		<div class="score" id="computer">
-			<span class="score0">Computer's Score</span> <br>
-			<span class="scores" id="computer-score">0</span>
-
-		</div>
-
-	</div>
-	<div id="reload-div"><button id="refresh">RESET</button></div>
-
-	<script src="./js/external.js"></script>
+  </head>
+  <body>
+    <header class="head">
+	  <h1>Welcome to the game of Rock Paper Scissors</h1>
+	  <h3 id="selection">This is a  game of rock-paper-scissor you play with the computer</h2>
+	  <h2 id="winner">The game ends when either you or computer scores <kbd>5</kbd> points</h3>
+	  </header>
+    <div class="container">
+	  <div class="score" id="player">
+	    <span class="score0">Your Score</span> <br>
+	    <span class="scores" id="player-score">0</span>
+	  </div>
+	  <div class="btns">
+		<button class="btn" id="rock-btn">
+		  <img src="./icons/rock.svg">
+		  <span>ROCK</span>
+		</button>
+		<button class="btn" id="paper-btn">
+		  <img src="./icons/paper.svg">
+		  <span>PAPER</span>
+		</button>
+		<button class="btn" id="scissor-btn">
+		  <img src="./icons/scissor.png">
+		  <span>SCISSOR</span>
+		</button>
+	  </div>
+	  <div class="score" id="computer">
+		<span class="score0">Computer's Score</span> <br>
+		<span class="scores" id="computer-score">0</span>
+	  </div>
+  </div>
+  <div id="reload-div">
+	<button id="refresh">RESET</button>
+  </div>
+  <script src="./js/external.js"></script>
 </body>
 
 </html>
